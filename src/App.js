@@ -1,6 +1,7 @@
-console.log('App is rendering');
 import React, { useState, useCallback } from 'react';
 import './App.css';
+
+console.log('App is rendering');
 
 function App() {
   const [remainingPacks, setRemainingPacks] = useState(2);
