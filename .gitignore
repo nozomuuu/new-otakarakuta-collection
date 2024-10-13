@@ -16,3 +16,17 @@ Thumbs.db
 
 # その他の一時ファイル
 *.tmp
+
+# .gitignoreファイルの内容
+Downloads/*
+
+echo "Downloads/*" >> ~/otakarakuta-collection/.gitignore
+a571038b43053c38f59d6c53bf4ab8e1c75c9fd7
+c4d804307d01c1cc4af42df494b19887db0d7a38
+
+echo "Downloads/Visual Studio Code 4.app/Contents/Frameworks/Electron Framework.framework/Versions/A/Electron Framework" >> .gitignore
+echo "Downloads/VSCode-darwin-universal (1).zip" >> .gitignore
+
+# Ignore large files
+Downloads/Visual Studio Code 4.app/
+Downloads/VSCode-darwin-universal (1).zip
