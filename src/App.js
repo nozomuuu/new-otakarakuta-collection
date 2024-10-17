@@ -14,7 +14,7 @@ function App() {
     const randomNumber = Math.floor(Math.random() * totalStickers) + 1;
     const rarityStars = randomNumber <= 10 ? '★★★' : randomNumber <= 30 ? '★★' : '★';
     setRarity(rarityStars); // レアリティ設定
-    return `/images/${randomNumber}.jpg`;
+    return `/images/${randomNumber}.png`;
   }, []);
 
   const updateRemainingPacks = useCallback(() => {
@@ -85,3 +85,16 @@ function App() {
 }
 
 export default App;
+const saveStickerToLocalStorage = (stickerName) => {
+  const collectedStickers = JSON.parse(localStorage.getItem('stickers')) || [];
+  collectedStickers.push(stickerName);
+  localStorage.setItem('stickers', JSON.stringify(collectedStickers));
+};
+
+// openWafer関数の中で、シールを表示した後にこの関数を呼び出します。
+setTimeout(() => {
+  const stickerName = `Sticker No. ${randomNumber}`; // シール名を設定
+  setSticker(pickRandomSticker());
+  setStickerVisible(true);
+  saveStickerToLocalStorage(stickerName); // シールをローカルストレージに保存
+}, 1000);
