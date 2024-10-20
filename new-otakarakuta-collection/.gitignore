@@ -1,0 +1,22 @@
+# Node.js関連
+node_modules/
+npm-debug.log
+
+# IDE関連
+.vscode/
+*.sublime-workspace
+
+# ビルド出力
+build/
+dist/
+
+# OS関連
+.DS_Store
+Thumbs.db
+
+# その他の一時ファイル
+*.tmp
+
+# Ignore large files
+Downloads/*
+

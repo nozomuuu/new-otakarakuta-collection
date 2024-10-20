@@ -1,0 +1,2 @@
+@keyframes moveUp{0%{transform:translateY(0)}to{transform:translateY(-800px)}}.wafer{max-width:200px;transition:transform 1s ease-out}.wafer.open{animation:moveUp 1s ease-out forwards}.sticker{height:auto!important;left:50%;opacity:1;position:absolute!important;top:45%;transform:translate(-50%,-50%);width:250px!important}.sticker-container p{color:gold;font-size:1.2rem;margin-top:5px}@media only screen and (max-width:600px){.wafer{max-width:150px}.sticker{width:200px!important}}
+/*# sourceMappingURL=main.61c3eae3.css.map*/
