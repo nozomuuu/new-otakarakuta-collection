@@ -1,16 +1,13 @@
 import { defineConfig } from 'vite';
-import path from 'path';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  root: path.resolve(__dirname, 'new-otakarakuta-collection'),
+  plugins: [react()],
+  root: './', // プロジェクトルートを指定
   build: {
-    outDir: path.resolve(__dirname, 'dist'),
+    outDir: 'dist', // ビルドの出力先ディレクトリ
     rollupOptions: {
-      input: path.resolve(__dirname, 'new-otakarakuta-collection', 'index.html')
-    }
+      input: './index.html', // エントリーファイルを正しく指定
+    },
   },
-  server: {
-    port: 3000,
-    open: true
-  }
 });
