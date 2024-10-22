@@ -21,7 +21,7 @@ function StickersPage() {
       {/* シールの表示 */}
       <div className="sticker-list">
         {stickersCollected.map((sticker, index) => (
-          <img key={index} src={`/images/${sticker}.jpg`} alt={`Sticker ${sticker}`} />
+         <img key={index} src={`${process.env.PUBLIC_URL}/images/${sticker}.jpg`} alt={`Sticker ${sticker}`} />
         ))}
       </div>
       <a href="/">ホームに戻る</a>

@@ -1,47 +1,32 @@
-/* ウエハースの移動速度 */
-@keyframes moveUp {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-800px);
-  }
+.App {
+  text-align: center;
 }
 
-/* ウエハースのスタイル */
-.wafer {
-  max-width: 200px;
-  transition: transform 1s ease-out; /* ラグを短縮 */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.wafer.open {
-  animation: moveUp 1s ease-out forwards;
+.sticker-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
 }
 
-/* シールのスタイル */
 .sticker {
-  width: 250px !important;
-  height: auto !important;
-  opacity: 1;
-  position: absolute !important;
-  left: 50%;
-  top: 45%; /* シールの位置を調整 */
-  transform: translate(-50%, -50%);
+  margin: 10px;
+  text-align: center;
 }
 
-.sticker-container p {
-  margin-top: 5px; /* シールとレアリティの間隔を詰める */
-  color: gold;
-  font-size: 1.2rem;
-}
-
-/* スマホ向けのスタイル調整 */
-@media only screen and (max-width: 600px) {
-  .wafer {
-    max-width: 150px;
-  }
-
-  .sticker {
-    width: 200px !important;
-  }
+.sticker img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
 }

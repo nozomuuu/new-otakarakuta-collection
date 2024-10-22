@@ -2,6 +2,7 @@
   "name": "new-otakarakuta-collection",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/",
   "engines": {
     "node": ">=10.0.0"
   },
@@ -17,9 +18,10 @@
     "@babel/eslint-parser": "^7.19.0"
   },
   "scripts": {
-    "start": "vite",
-    "build": "vite build",
-    "test": "vitest"
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
